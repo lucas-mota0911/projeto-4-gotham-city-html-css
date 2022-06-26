@@ -1,0 +1,340 @@
+/* Geral */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Garamond, "Times New Roman", serif;
+	background: black;
+	color: white;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.titulo{
+	background: #2F2F2F;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 5px;
+}
+
+
+.subtitulo{
+	font-size: 1em;
+	font-weight: bold;
+	color: black;
+	background: white;
+}
+
+.clear{
+	clear: both;
+}
+
+
+/* Cabeçalho */
+#cabecalho{
+	height: 224px;
+	background: url(../imagens-gotham/fundo-gotham.png) repeat-x;
+}	
+
+#area-cabecalho{
+	width: 850px;
+	height: 200px;
+	margin: auto;
+	background: url(../imagens-gotham/detalhe-gotham.png) no-repeat right top;
+}
+
+#logo-cabecalho{
+	color: black;
+	width: 553px;
+	height: 213px;
+	background: url(../imagens-gotham/logo-gotham.png) no-repeat left top;
+}
+
+
+/* Menu superior */
+#cabecalho ul{
+	margin: -50px auto 0 255px;
+	background: #424343;
+	float: left;
+}
+
+#menu-superior li{
+	float: left;	
+}
+
+#menu-superior li a{
+	color: white;
+	text-decoration: none;
+	padding: 2px 15px;
+	font-size: 18px;
+}
+
+#menu-superior li a:hover{
+	border: 1px solid red;
+}
+
+body.pg-principal #menu-superior a#pg-principal,
+body.gotham-hoje #menu-superior a#gotham-hoje,
+body.mundo-a-fora #menu-superior a#mundo-a-fora,
+body.bancos #menu-superior a#bancos,
+body.hospitais #menu-superior a#hospitais,
+body.experiencias #menu-superior a#experiencias,
+body.galeria #menu-superior a#galeria{
+	border: 1px solid red;
+	cursor: text;
+	color: red;
+}
+
+/* Área principal */
+#area-principal{
+	margin-top: 5px;
+	margin-left: 240px;
+	width: 800px;
+	float: left;
+	/*border: 1px solid red;*/
+}
+
+/* Pg. três colunas */
+#conteudo-lateral{
+	font-size: 1em;
+	width: 150px;
+	float: left;
+	margin: 0 0 20px -800px;
+}
+
+#conteudo-primario{
+	width: 300px;
+	margin: 0 0 20px 175px;
+	float: left;
+}
+
+#conteudo-secundario{
+	width: 300px;
+	float: left;
+	margin: 0 0 20px 25px;
+}
+
+/* Pg. duas colunas */
+#duas-colunas #conteudo-primario{
+	width: 625px;
+}
+
+
+
+/* Pg. uma colunas */
+#uma-coluna #conteudo-primario{
+	width: 800px;
+	margin: 0 0 20px 0px;
+}
+
+/* Rodapé */
+#area-rodape{
+	background: #2F2F2E;
+	padding: 20px;
+}
+
+#rodape{
+	font-size: 1.2em;
+	width: 800px;
+	margin: 0 auto;
+	color: white;
+}
+
+
+/* menu lateral */
+
+#menu-lateral a{
+	font-size: 0.9em;
+	font-weight: bold;
+	padding: 3px;
+	display: block;
+	line-height: 25px;
+	color: black;
+	text-decoration: none;
+	border-bottom: 1px solid #424242;
+	background: #6F6F6E;
+}
+
+#menu-lateral a:hover{
+	color: darkred;
+	text-align: center;
+}
+
+body.arthur-fleck #menu-lateral a#arthur-fleck,
+body.bane-dorrance #menu-lateral a#bane-dorrance,
+body.oswald-cobblepot #menu-lateral a#oswald-cobblepot,
+body.edward-nygma #menu-lateral a#edward-nygma,
+body.maria-mercedes #menu-lateral a#maria-mercedes,
+body.ivy-pepper #menu-lateral a#ivy-pepper,
+body.luigi-maroni #menu-lateral a#luigi-maroni,
+body.harvey-dent #menu-lateral a#harvey-dent,
+body.victor-zsasz #menu-lateral a#victor-zsasz,
+body.carmine-falcone #menu-lateral a#carmine-falcone{
+	font-size: 1.2em;
+	color: orange;
+	text-align: center;
+}
+
+
+/* primeira mao */
+label{
+	cursor: pointer;
+	display: block;
+}
+
+input{
+	font-size: 0.9em;
+	background: #white;
+}
+
+#receba-noticias{
+	margin-top: 10px;
+	background: #6F6F6E;
+}
+
+#form-lateral{
+	font-weight: bold;
+	line-height: 25px;
+	color: black;
+	text-align: center;
+}
+
+#form-lateral input#email{
+	padding-left: 2px;
+	width: 95%;
+}
+
+#form-lateral input#cadastrar{
+	color: white;
+	background: #2F2F2F;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#form-lateral input#cadastrar:hover{
+	background: darkred;
+	box-shadow: 0 0 2em red;
+	-webkit-box-shadow: 0 0 2em red;
+	-moz-box-shadow: 0 0 2em red;
+}
+
+/* caixa de noticias */
+.caixa-noticia{
+	margin-bottom: 20px;
+	background: #6F6F6E;
+}
+
+.caixa-noticia .titulo{
+	background: #2F2F2F;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.noticia{
+	padding: 6px 0px 0px 6px;
+}
+
+.noticia img{
+	margin-top: 3px;
+	width: 98%;
+	height: auto;
+}
+
+.noticia a{
+	color: black;
+	font-weight: bold;
+}
+
+.noticia a:hover{
+	color: red;
+	font-weight: normal;
+}
+
+/* lista de noticias */
+.lista-noticias{
+	float: left;
+	background: #6F6F6E;
+}
+
+.lista-noticias li{
+	float: left;
+	width: 100%;
+}
+
+.lista-noticias a{
+	width: 100%;
+	float: left;
+	display: block;
+	text-decoration: none;
+	border-bottom: 1px solid black;
+	padding: 6px;
+}
+
+.lista-noticias img{
+	width: 50px;
+	height: auto;
+	float: left;
+}
+
+.armas-crime img{
+	width: 75px;
+	float: left;
+	margin-right: 5px;
+}
+
+.destaque img{
+	width: 170px;
+	height: 90px;
+	float: left;
+	margin-right: 10px;
+}
+
+.lista-noticias h3,
+.lista-noticias p{
+	padding-left: 60px;
+}
+
+.armas-crime h3,
+.armas-crime p{
+	padding-left: 85px;
+}
+
+.destaque h3,
+.destaque p{
+	padding-left: 110px;
+}
+
+.lista-noticias h3{
+	color: black;
+}
+
+.lista-noticias p{
+	color: white;
+}
+
+.lista-noticias li:hover{
+	box-shadow: inset 0 0 1em darkorange, 0 0 2em darkorange;
+	-webkit-box-shadow: inset 0 0 1em darkorange, 0 0 2em darkorange;
+	-moz-box-shadow: inset 0 0 1em darkorange, 0 0 2em darkorange;
+}
+
+.armas-crime li:hover{
+	box-shadow: inset 0 0 1em darkcyan, 0 0 2em darkcyan;
+	-webkit-box-shadow: inset 0 0 1em darkcyan, 0 0 2em darkcyan;
+	-moz-box-shadow: inset 0 0 1em darkcyan, 0 0 2em darkcyan;
+}
+
+.destaque li:hover{
+	background: #6F6F6E;
+	margin-left: 30px;
+	box-shadow: inset 0 0 1em black, 0 0 2em darkviolet;
+	-webkit-box-shadow: inset 0 0 1em black, 0 0 2em darkviolet;
+	-moz-box-shadow: inset 0 0 1em black, 0 0 2em darkviolet;
+}
